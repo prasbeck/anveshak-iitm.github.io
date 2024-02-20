@@ -1,0 +1,1163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <title>Anveshak | The Team</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <style>
+      #hero {
+        background-color: transparent;
+      }
+      .parallax-1 {
+        background-image: url("images/rovers/IMG_7331.jpg");
+        min-height: 500px;
+      }
+      .parallax-2 {
+        background-image: url("images/bg-team-details.jpg");
+      }
+      .parallax-1,
+      .parallax-2 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .text-svg-3 {
+        stroke: #de5617ee;
+        fill: transparent;
+        transition: 2s ease-in-out fill, 2s ease-in-out stroke;
+      }
+      #section-2:hover .text-svg-3 {
+        stroke: transparent;
+        fill: #de5617ee;
+      }
+      h3 {
+        margin: 12px 0px;
+      }
+      h3 > a {
+        padding: 8px 30px;
+        margin-bottom: 16px;
+        text-decoration: none;
+        font-size: 18px;
+        letter-spacing: normal;
+        border-bottom: 4px solid #de5617ee;
+        transition: 1s ease-in-out color, 1s ease-in-out background-color;
+      }
+
+      html {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
+
+      *,
+      *:before,
+      *:after {
+        box-sizing: inherit;
+      }
+
+      .column {
+        float: left;
+        width: 33.3%;
+        max-width: 330px;
+        margin-bottom: 16px;
+        padding: 0 16px;
+        align-self: center;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        background-color: white;
+      }
+      .card .profile-img img {
+        transform: scale(1.05);
+        transition: 1s transform;
+      }
+      .card:hover .profile-img img {
+        transform: scale(1);
+      }
+      .card:hover {
+        border: 1px solid black;
+      }
+
+      .card-body {
+        padding: 0px 16px;
+      }
+      .card-body::after,
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+      .title {
+        color: #de5617ee;
+        font-size: medium;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h2,
+      .title {
+        text-align: center;
+        line-height: normal;
+        margin: 3px 2px;
+        padding: 0;
+      }
+      .profile-img {
+        height: 280px;
+        overflow: hidden;
+      }
+      .profile-img img {
+        width: 100%;
+      }
+      .button {
+        border: none;
+        outline: 0;
+        display: inline-block;
+        padding: 3px;
+        color: white;
+        background-image: url("icons/icons8-linkedin.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 36px;
+        text-align: center;
+        cursor: pointer;
+        width: 36px;
+        scale: 0.5;
+        transition: 1s ease-in-out transform;
+      }
+      p {
+        margin: 0;
+      }
+      .button:hover {
+        transform: scale(1);
+      }
+      h3 a:hover {
+        background-color: #de5617ee;
+        color: white;
+      }
+      #section-1 :nth-child(2) {
+        background-color: black;
+        padding: 4rem;
+        color: white;
+      }
+      .profile-img,
+      .card {
+        min-width: 194px;
+      }
+      @media screen and (max-width: 650px) {
+        .column {
+          width: 100%;
+          display: block;
+          max-width: 100%;
+        }
+        .profile-img img {
+          min-width: 150px;
+          max-width: 250px;
+        }
+        .profile-img {
+          height: auto;
+          text-align: center;
+          margin-top: 8px;
+        }
+        h3 > a {
+          font-size: small;
+        }
+
+        #section-1 :nth-child(2) {
+          background-color: black;
+          padding: 8px 12px;
+          color: white;
+          font-size: small;
+        }
+      }
+      @media screen and (min-width: 1024px) {
+        .profile-img,
+        .card {
+          min-width: 297px;
+        }
+        .column {
+          width: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="hero">
+      <div class="container">
+        <img
+          src="images/teams/20240129_131308.jpg"
+          alt="_team2024"
+          class="bg-video"
+        />
+
+        <header id="main-header">
+          <a href="index.html"
+            ><img src="images/logo.png" id="logo" alt="Logo"
+          /></a>
+          <nav>
+            <ul class="menu-large">
+              <li><a href="index.html">Home</a></li>
+              <li class="has-submenu drop-down">
+                <a
+                  href="#"
+                  style="
+                    text-decoration: underline;
+                    text-decoration-color: #de5617ee;
+                    text-decoration-thickness: 2px;
+                    color: white;
+                    font-weight: 700;
+                  "
+                  >The Team</a
+                >
+                <ul>
+                  <li><a href="#">Present team</a></li>
+                  <li><a href="alumni.html">Alumni</a></li>
+                </ul>
+              </li>
+              <li><a href="rovers.html">Rovers</a></li>
+              <li><a href="achievements.html">Achievements</a></li>
+              <li class="has-submenu drop-down">
+                <a href="#" style="pointer-events: none">Competitions</a>
+                <ul>
+                  <li>
+                    <a href="International-rover-challenge-2024.html"
+                      >International Rover Challenge(IRC) 2024</a
+                    >
+                  </li>
+                  <li>
+                    <a href="Anatolian-rover-challenge-2023.html"
+                      >Anatolian Rover Challenge(ARC) 2023</a
+                    >
+                  </li>
+                  <li>
+                    <a href="University-rover-challenge-2023.html"
+                      >University Rover Challenge(URC) 2023</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="media.html">Media</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+            <ul class="menu-small">
+              <li class="has-submenu">
+                <button
+                  onclick="showMenu()"
+                  id="show-btn"
+                  style="
+                    background-color: transparent;
+                    border: none;
+                    margin-left: 4rem;
+                  "
+                >
+                  <div class="menu-div"></div>
+                  <div class="menu-div"></div>
+                  <div class="menu-div"></div>
+                </button>
+                <button
+                  onclick="hideMenu()"
+                  id="hide-btn"
+                  style="
+                    background-color: transparent;
+                    border: none;
+                    margin-left: 4rem;
+                    z-index: 40;
+                  "
+                >
+                  <div class="menu-div" style="transform: rotate(45deg)"></div>
+                  <div class="menu-div" style="transform: rotate(-45deg)"></div>
+                </button>
+                <ul id="sub-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li>
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: underline;
+                        text-decoration-color: #de5617ee;
+                        text-decoration-thickness: 2px;
+                        color: white;
+                        font-weight: 700;
+                      "
+                      >Present team</a
+                    >
+                  </li>
+                  <li><a href="alumni.html">Alumni</a></li>
+                  <li><a href="rovers.html">Rovers</a></li>
+                  <li><a href="achievements.html">Achievements</a></li>
+                  <li>
+                    <a onclick="showDropMenu()"> Competitions </a>
+                  </li>
+                  <li id="dropMenu" class="drop-hide">
+                    <a href="International-rover-challenge-2024.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" />
+                      International Rover Challenge(IRC) 2024</a
+                    >
+
+                    <a href="Anatolian-rover-challenge-2023.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" /> Anatolian
+                      Rover Challenge(ARC) 2023</a
+                    >
+
+                    <a href="University-rover-challenge-2023.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" />
+                      University Rover Challenge(URC) 2023</a
+                    >
+                  </li>
+                  <li><a href="media.html">Media</a></li>
+                  <li><a href="sponsors.html">Sponsors</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <a class="btn" href="supportus.html">Support Us</a>
+        </header>
+
+        <svg viewBox="0 0 400 160">
+          <text
+            x="50%"
+            y="40%"
+            dy="0.32em"
+            text-anchor="middle"
+            class="text-svg-1"
+          >
+            The
+          </text>
+          <text
+            x="50%"
+            y="80%"
+            dy="0.32em"
+            text-anchor="middle"
+            class="text-svg-2"
+          >
+            team
+          </text>
+        </svg>
+      </div>
+    </section>
+
+    <section id="section-1">
+      <div class="parallax-1"></div>
+      <div>
+        <p>
+          Team Anveshak comprises of 30+ enthusiastic undergraduates from
+          different verticals of engineering working towards development of a
+          semi-autonomous vehicle capable of extreme terrain traversal and
+          scientific exploration. Our team brings together a set of highly
+          dedicated & skilled students working on mechanical design, system
+          architecture & control, outreach & business relations. We also
+          organize educational workshops for students of our institute on
+          different aspects of robotics. The technical knowledge & practical
+          experience the team imparts to its members is unparalleled, nurturing
+          them into effective team players & leaders of industry & research.
+        </p>
+      </div>
+    </section>
+    <section id="section-2">
+      <div class="parallax-2">
+        <svg viewBox="0 0 400 40">
+          <text
+            x="50%"
+            y="50%"
+            dy="0.32em"
+            text-anchor="middle"
+            class="text-svg-3"
+          >
+            Present Team
+          </text>
+        </svg>
+        <div class="justify-center" style="background-color: transparent">
+          <h3><a href="#leads">Team Leads</a></h3>
+          <div style="display: flex; justify-content: center">
+            <h3><a href="#mech">Mechanical</a></h3>
+            <h3><a href="#elec">Electrical</a></h3>
+            <h3><a href="#astro">Astrobiology</a></h3>
+            <h3><a href="#cpr">CPR</a></h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="leads" class="justify-center">
+      <div
+        style="
+          font-size: 3rem;
+          padding: 60px 0px;
+          font-weight: 600;
+          stroke: rgb(3, 22, 2);
+          fill: white;
+          letter-spacing: normal;
+        "
+        data-aos="fade-up"
+      >
+        Team Leads
+      </div>
+      <!-- <svg viewBox="0 0 400 60">
+        <text
+          x="50%"
+          y="40%"
+          dy="0.32em"
+          text-anchor="middle"
+          class="text-svg-1"
+          
+          
+        >
+          
+        </text>
+      </svg> -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1688063063/anveshak/varun_wgc5we.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Varun Manjunath</h2>
+              <p class="title">Team Head</p>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1688063064/anveshak/shivendra1_bhhasn.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Shivendra Singh Verma</h2>
+              <p class="title">Team Head</p>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img src="" alt="" />
+            </div>
+            <div class="card-body">
+              <h2>Manomukil T</h2>
+              <p class="title">CPR Head</p>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1688063191/anveshak/anuraag_nlrf4a.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Anuraag Rapaka</h2>
+              <p class="title">Operations Head</p>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694260819/anveshak/Hasa_1_1_y8p3q0.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Mohan Chandra Hasa</h2>
+              <p class="title">Competition Strategist</p>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1688063193/anveshak/jaswanth_faxjh3.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Jaswanth V G</h2>
+              <p class="title">Competition Strategist</p>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------------row 3------------ -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1688063069/anveshak/darshan1_vmalsi.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Darshan K</h2>
+              <p class="title">Mechanical Lead</p>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1688063206/anveshak/riswanth_h2k79i.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Riswant P B</h2>
+              <p class="title">traversal Design Lead</p>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img src="" alt="" />
+            </div>
+            <div class="card-body">
+              <h2>Gokul M K</h2>
+              <p class="title">Electronics Lead</p>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------------------------------------row -4 -------------------------------------------------------------- -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img src="" alt="" />
+            </div>
+            <div class="card-body">
+              <h2>Yegneshwaran</h2>
+              <p class="title">End Effector Lead</p>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1688063058/anveshak/manjari1_suxzns.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Manjari Sengupta</h2>
+              <p class="title">Autonomous Lead</p>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1688063058/anveshak/sanyukta_o5srgn.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Sanyukta Gedam</h2>
+              <p class="title">Astrobiology Lead</p>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- -----------------------------------row 5 --------------------------------- -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1688063069/anveshak/divyanshu_cnlccc.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Divyanshu</h2>
+              <p class="title">Media Lead</p>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1688063056/anveshak/saketh1_nl3fqs.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Saketh</h2>
+              <p class="title">Manipulator Design Lead</p>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- --------------------------------mechanical------------------ -->
+
+    <section id="mech" class="justify-center">
+      <div
+        data-aos="fade-up"
+        style="
+          stroke: rgb(23, 61, 4);
+          font-size: 3rem;
+          font-weight: 600;
+          letter-spacing: normal;
+          fill: white;
+          margin: 60px 0px;
+        "
+      >
+        Mechanical Team
+      </div>
+
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266342/Mech-20230909T132501Z-001/Mech/Hithysh_1_1_k8x5rh.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Hithysh</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266341/Mech-20230909T132501Z-001/Mech/Adithi_1_1_k2emnc.png"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>S. Pon Adithi</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266343/Mech-20230909T132501Z-001/Mech/Chinmay_4-3_ou2qvm.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Chinmay Gurujee</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266346/Mech-20230909T132501Z-001/Mech/IMG-20230908-WA0012_lm2wbg.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Sahil Kelkar</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266349/Mech-20230909T132501Z-001/Mech/IMG_20230908_162701_q1t4ub.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Debanjan Guha</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266343/Mech-20230909T132501Z-001/Mech/Kousikan_1_1_v3d7lq.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Koushik K J</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------------row 3------------ -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266338/Mech-20230909T132501Z-001/Mech/Aayush_Image_1_1_l7rnlo.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Ayush Chodhary</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img src="" alt="" />
+            </div>
+            <div class="card-body">
+              <h2>Anush Adithya</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img src="" alt="" />
+            </div>
+            <div class="card-body">
+              <h2>K Abhiram</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------------------------------------row -4 -------------------------------------------------------------- -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266344/Mech-20230909T132501Z-001/Mech/Yukteshwar_1_1_apmd59.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Yukteshwar</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------------------------electrical team ------------------ -->
+
+    <section id="elec" class="justify-center">
+      <div
+        style="
+          font-size: 3rem;
+          font-weight: 600;
+          letter-spacing: normal;
+          stroke: black;
+          fill: white;
+          padding: 60px 0px;
+        "
+        data-aos="fade-up"
+      >
+        Elec & Software Team
+      </div>
+      <!-- <svg viewBox="0 0 400 60">
+        <text
+          x="50%"
+          y="40%"
+          dy="0.32em"
+          text-anchor="middle"
+          class="text-svg-1"
+          style="
+            font-size: 18px;
+            letter-spacing: normal;
+            stroke: black;
+            fill: white;
+            animation: none;
+          "
+        >
+          Elec & Software Team
+        </text>
+      </svg> -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694267269/ESW/Santosh_zzte2i_niwhf1.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Santhosh V</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266322/ESW/20230908_162508_vkdtyq.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Pranav</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266333/ESW/Aadit_4_3_qtyct9.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Aadit Chug</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266325/ESW/IMG-20230724-WA0029_iuzhlo.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Arya Sikder</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img src="" alt="" />
+            </div>
+            <div class="card-body">
+              <h2>Anuj Sreenivasan</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266330/ESW/Pratham_4_3_oqmmzh.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Pratham Kogta</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ------------------------------------------row 3------------ -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266327/ESW/IMG_20230908_152442_elhjio.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Kavin Arvinth</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img src="" alt="" />
+            </div>
+            <div class="card-body">
+              <h2>Tanish Oleti</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266330/ESW/Om_Shende_43_ufnfbf.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Om Shende</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------------------------------------row -4 -------------------------------------------------------------- -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266327/ESW/Jai_1_1_wwl20y.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Jai Karandikar</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266323/ESW/Amogh_1_1_oevq8c.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Amogh Okade</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266334/ESW/Venkat1_1_ogvi6s.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Venkat</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266330/ESW/Saahil_1_1_c87o45.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Sahil</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266330/ESW/Kishore_1_1_kzpyjx.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Kishore</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------astrobio  team ---------------- -->
+
+    <section id="astro" class="justify-center">
+      <div
+        style="
+          font-size: 3rem;
+          letter-spacing: normal;
+          stroke: blue;
+          fill: white;
+          font-weight: 600;
+          padding: 60px 0px;
+        "
+        data-aos="fade-up"
+      >
+        Astrobiology Team
+      </div>
+      <!-- <svg viewBox="0 0 400 60">
+        <text
+          x="50%"
+          y="40%"
+          dy="0.32em"
+          text-anchor="middle"
+          class="text-svg-1"
+          style="
+            font-size: 18px;
+            letter-spacing: normal;
+            stroke: blue;
+            fill: white;
+            animation: none;
+          "
+        >
+          Astrobiology Team
+        </text>
+      </svg> -->
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266365/Astrobio-20230909T132448Z-001/Astrobio/WhatsApp_Image_2023-09-08_at_23.47.39_1_m8gaul.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Shrey R</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266374/Astrobio-20230909T132448Z-001/Astrobio/IMG_20230909_002124_xzysui.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Amrutha</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img
+                src="https://res.cloudinary.com/dw5lg32k5/image/upload/v1694266365/Astrobio-20230909T132448Z-001/Astrobio/IMG_20230908_231300_ycva2f.jpg"
+                alt=""
+              />
+            </div>
+            <div class="card-body">
+              <h2>Sneha Dharshini</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <div class="profile-img">
+              <img src="" alt="" />
+            </div>
+            <div class="card-body">
+              <h2>Nishok</h2>
+              <p class="justify-center"><a class="button"></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({ once: false, duration: 500 });
+    </script>
+    <script src="js/menu-script.js"></script>
+  </body>
+</html>

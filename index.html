@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <title>Anveshak | IIT Madras</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      img {
+        display: block;
+      }
+      #hero {
+        background-color: transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="hero">
+      <div class="container">
+        <video autoplay muted loop class="bg-video">
+          <source src="videos/background-1.mp4" />
+        </video>
+
+        <header id="main-header">
+          <a href="#"><img src="images/logo.png" id="logo" alt="Logo" /></a>
+          <nav>
+            <ul class="menu-large">
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: underline;
+                    text-decoration-color: #de5617ee;
+                    text-decoration-thickness: 2px;
+                    color: white;
+                    font-weight: 700;
+                  "
+                  >Home</a
+                >
+              </li>
+              <li class="has-submenu drop-down">
+                <a href="#">The Team</a>
+                <ul>
+                  <li><a href="team.html">Present Team</a></li>
+                  <li><a href="alumni.html">Alumni</a></li>
+                </ul>
+              </li>
+              <li><a href="rovers.html">Rovers</a></li>
+              <li><a href="achievements.html">Achievements</a></li>
+              <li class="has-submenu drop-down">
+                <a href="#" style="pointer-events: none">Competitions</a>
+                <ul>
+                  <li>
+                    <a href="International-rover-challenge-2024.html"
+                      >International Rover Challenge(IRC) 2024</a
+                    >
+                  </li>
+                  <li>
+                    <a href="Anatolian-rover-challenge-2023.html"
+                      >Anatolian Rover Challenge(ARC) 2023</a
+                    >
+                  </li>
+                  <li>
+                    <a href="University-rover-challenge-2023.html"
+                      >University Rover Challenge(URC) 2023</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="media.html">Media</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+            <ul class="menu-small">
+              <li class="has-submenu">
+                <button
+                  onclick="showMenu()"
+                  id="show-btn"
+                  style="
+                    background-color: transparent;
+                    border: none;
+                    margin-left: 4rem;
+                  "
+                >
+                  <div class="menu-div"></div>
+                  <div class="menu-div"></div>
+                  <div class="menu-div"></div>
+                </button>
+                <button
+                  onclick="hideMenu()"
+                  id="hide-btn"
+                  style="
+                    background-color: transparent;
+                    border: none;
+                    margin-left: 4rem;
+                    z-index: 40;
+                  "
+                >
+                  <div class="menu-div" style="transform: rotate(45deg)"></div>
+                  <div class="menu-div" style="transform: rotate(-45deg)"></div>
+                </button>
+                <ul id="sub-menu">
+                  <li>
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: underline;
+                        text-decoration-color: #de5617ee;
+                        text-decoration-thickness: 2px;
+                        color: white;
+                        font-weight: 700;
+                      "
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a href="team.html">The Team</a>
+                  </li>
+                  <li><a href="alumni.html">Alumni</a></li>
+                  <li><a href="rovers.html">Rovers</a></li>
+                  <li><a href="achievements.html">Achievements</a></li>
+                  <li>
+                    <a onclick="showDropMenu()"> Competitions </a>
+                  </li>
+                  <li id="dropMenu" class="drop-hide">
+                    <a href="International-rover-challenge-2024.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" />
+                      International Rover Challenge(IRC) 2024</a
+                    >
+
+                    <a href="Anatolian-rover-challenge-2023.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" /> Anatolian
+                      Rover Challenge(ARC) 2023</a
+                    >
+
+                    <a href="University-rover-challenge-2023.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" />
+                      University Rover Challenge(URC) 2023</a
+                    >
+                  </li>
+
+                  <li><a href="media.html">Media</a></li>
+                  <li><a href="sponsors.html">Sponsors</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <a class="btn" href="supportus.html">Support Us</a>
+        </header>
+
+        <!-- <h1><span>Anveshak</span> iitm</h1> -->
+        <svg viewBox="0 0 400 160">
+          <text
+            x="50%"
+            y="40%"
+            dy="0.32em"
+            text-anchor="middle"
+            class="text-svg-1"
+          >
+            Team
+          </text>
+          <text
+            x="50%"
+            y="80%"
+            dy="0.32em"
+            text-anchor="middle"
+            class="text-svg-2"
+          >
+            anveshak
+          </text>
+        </svg>
+      </div>
+    </section>
+    <!-- ------------------ content ------------------ -->
+
+    <section class="content-box">
+      <div>
+        <svg viewBox="0 0 400 40">
+          <text
+            x="50%"
+            y="50%"
+            dy="0.32em"
+            text-anchor="middle"
+            class="text-svg-3"
+          >
+            about us
+          </text>
+        </svg>
+
+        <div class="grid-layout">
+          <p>
+            Team Anveshak is a dedicated group of 35+ undergraduate students
+            from the Indian Institute of Technology Madras (IIT Madras) who are
+            passionate about robotics and committed to pushing the boundaries of
+            technological innovation. Since our inception in early 2016, we have
+            spent countless days and nights perfecting our craft. Recently, we
+            celebrated our seventh anniversary & are proud of the incredible
+            journey we have had so far. With a strong focus on creating
+            cost-effective solutions, the team actively participates in
+            international competitions such as the University Rover Challenge
+            (URC), where they showcase their expertise in designing and
+            operating autonomous rovers. Beyond competitions, Team Anveshak aims
+            to make a lasting impact by developing robotic systems for human
+            assistance, disaster rescue operations, and exploration purposes.
+            Team Anveshak deploys interdisciplinary approaches to redefine the
+            possibilities of robotics and contribute to a better future.
+          </p>
+        </div>
+      </div>
+      <!-- ------------------ -->
+      <div>
+        <svg viewBox="0 0 400 40">
+          <text
+            x="50%"
+            y="50%"
+            dy="0.32em"
+            text-anchor="middle"
+            class="text-svg-3"
+          >
+            about iitm
+          </text>
+        </svg>
+        <div class="grid-layout">
+          <div class="justify-center">
+            <img src="images/iitmlogo.png" width="40%" alt="IIT Madras" />
+          </div>
+          <div>
+            <p>
+              Located in Chennai, India, the Indian Institute of Technology
+              Madras <span style="color: #de5617ee">(IIT Madras)</span> stands
+              as one of India's premier engineering institutions, renowned for
+              its academic excellence and cutting-edge research. Established in
+              1959, IIT Madras has consistently ranked among the top engineering
+              institutes globally, attracting bright minds from across the
+              nation and beyond. With a sprawling campus, state-of-the-art
+              facilities, and a vibrant student community, IIT Madras fosters a
+              conducive environment for innovation, creativity, and holistic
+              growth.
+            </p>
+          </div>
+
+          <div>
+            <p>
+              At IIT Madras, academic rigor goes hand in hand with a vibrant
+              campus life, where students engage in a multitude of
+              extracurricular activities, clubs, and events. Research at IIT
+              Madras spans a wide spectrum of fields, with faculty and students
+              collaborating on ground-breaking projects, pushing the boundaries
+              of knowledge and contributing to societal advancements. With 140+
+              CSR partners and CSR projects worth Rs. 200+ crores in the past
+              few years, the Institute has been pioneering technology-driven
+              advancement.
+            </p>
+          </div>
+          <div class="justify-center">
+            <img
+              src="images/sudha-n-shankar.webp"
+              width="75%"
+              alt="IIT Madras"
+            />
+          </div>
+          <div class="justify-center">
+            <div style="width: 90%" class="justify-center">
+              <img src="images/cfilogo.jpg" width="50%" alt="CFI" />
+            </div>
+          </div>
+          <div>
+            <p>
+              Located within the Sudha and Shankar Innovation Hub, the Centre
+              for Innovation (CFI) is an exceptional 24/7 student laboratory
+              that was established to foster a culture of innovation within the
+              IIT Madras student community. Serving as the central hub, it
+              offers an ideal platform for Team Anveshak to carry out their
+              activities and pursue their endeavors. For additional details
+              about CFI, further information can be accessed
+              <a
+                href="https://cfi.iitm.ac.in/"
+                target="_blank"
+                style="color: #de5617ee"
+              >
+                here </a
+              >.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------------------------- -->
+      <div>
+        <svg viewBox="0 0 400 40">
+          <text
+            x="50%"
+            y="50%"
+            dy="0.32em"
+            text-anchor="middle"
+            class="text-svg-3"
+          >
+            what we do
+          </text>
+        </svg>
+        <div class="grid-layout" style="align-items: start; gap: 40px">
+          <div>
+            <p>
+              To test ourselves on the global stage & to learn from the best in
+              the business, our team participates in the University Rover
+              Challenge(URC), an international robotics competition geared
+              towards space exploration & research. URC is a project of The Mars
+              Society aimed at promoting space technology research & development
+              amongst students across the world, by challenging them to build
+              the next generation of Mars rovers. Several teams from the top
+              universities of North America, Europe, Asia and other parts of the
+              world compete in this challenge which tests their rovers in the
+              extreme conditions of the Mars Desert Research Station, which is
+              akin to Martian terrain.
+            </p>
+          </div>
+          <div>
+            <p>
+              From qualifying to participate in the European Rover
+              Challenge(ERC) 2016 to actually finishing as champions of Indian
+              Rover Challenge(IRC) 2019 and finally finishing in
+              <span style="color: #de5617ee"
+                >the top 12 positions in University Rover Challenge(URC)
+                2019</span
+              >
+              , we as a team have grown at a rapid pace & have learned &
+              improved at each stage. In Our long term vision, we hope to
+              collaborate with the top research organizations of India such as
+              the Indian Space Research Organization(ISRO) & the Defense
+              Research & Development Organization(DRDO) in building truly world
+              class technologies for all.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ---------------------------------------------footer------------------------------------------------------- -->
+
+    <section>
+      <div class="footer">
+        <div>
+          <div>
+            <img src="images/logo.png" width="80" alt="" />
+            <div style="flex-direction: row; gap: 20px" class="justify-center">
+              <a href="https://facebook.com/anveshak.iitm" target="_blank">
+                <img src="icons/icons8-facebook.svg" alt="FB" />
+              </a>
+              <a
+                href="https://www.instagram.com/anveshak_iitm/"
+                target="_blank"
+              >
+                <img src="icons/icons8-instagram.svg" alt="Instagram" />
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UCiYcMDTMdyaxfUrP-6C2HAQ"
+                target="_blank"
+              >
+                <img src="icons/icons8-youtube.svg" alt="YouTube" />
+              </a>
+              <a href="mailto:teamanveshak@smail.iitm.ac.in">
+                <img src="icons/icons8-gmail.svg" alt="Email" />
+              </a>
+            </div>
+          </div>
+          <div>
+            <h2 className="text-2xl font-semibold text-gray-500">Contact us</h2>
+            <div className="mb-10 ">
+              <div>
+                Email :
+                <a href="mailto:teamanveshak@smail.iitm.ac.in">
+                  teamanveshak@smail.iitm.ac.in
+                </a>
+              </div>
+              <div>
+                Faculty :
+                <a href="mailto:asok@iitm.ac.in">asok@iitm.ac.in</a>
+              </div>
+              <div>Phone : <a href="tel:+919840716516">+91 98407 16516</a></div>
+            </div>
+            <div style="margin-top: 12px">
+              Center for Innovation, <br />
+              Sudha and Sankar Innovation Hub,<br />
+              IIT Madras, <br />
+              Chennai Tamilnadu - 600036
+            </div>
+          </div>
+
+          <div class="map">
+            <iframe
+              width="100%"
+              height="250px"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=%20sudha%20ans%20shankar%20cfi%20iitm+(Anveshak%20iitm)&amp;t=h&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            >
+              <a href="https://www.maps.ie/population/">
+                Population Estimator map
+              </a>
+            </iframe>
+          </div>
+        </div>
+        <div className=" mt-14">
+          <div class="justify-center" style="color: #de5617ee">
+            <p><span>&copy </span>2024. Team Anveshak</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -----------------------------sript---------------- -->
+    <script src="js/menu-script.js"></script>
+  </body>
+</html>

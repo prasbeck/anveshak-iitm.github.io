@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <title>Anveshak | The Media</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      .header {
+        text-align: center;
+        padding: 32px;
+      }
+
+      .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+
+      .row img {
+        margin-top: 8px;
+        vertical-align: middle;
+        width: 100%;
+      }
+      #hero {
+        background-color: transparent;
+      }
+
+      @media screen and (max-width: 800px) {
+        .column {
+          -ms-flex: 50%;
+          flex: 50%;
+          max-width: 50%;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .column {
+          -ms-flex: 100%;
+          flex: 100%;
+          max-width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="hero">
+      <div class="container">
+        <!-- Air -->
+        <video autoplay muted loop class="bg-video">
+          <source src="videos/background-1.mp4" />
+        </video>
+
+        <header id="main-header">
+          <a href="index.html"
+            ><img src="images/logo.png" id="logo" alt="Logo"
+          /></a>
+          <nav>
+            <ul class="menu-large">
+              <li><a href="index.html">Home</a></li>
+              <li class="has-submenu drop-down">
+                <a href="#">The Team</a>
+                <ul>
+                  <li><a href="team.html">Present Team</a></li>
+                  <li><a href="alumni.html">Alumni</a></li>
+                </ul>
+              </li>
+
+              <li><a href="rovers.html">Rovers</a></li>
+              <li><a href="achievements.html">Achievements</a></li>
+              <li class="has-submenu drop-down">
+                <a href="#" style="pointer-events: none">Competitions</a>
+                <ul>
+                  <li>
+                    <a href="International-rover-challenge-2024.html"
+                      >International Rover Challenge(IRC) 2024</a
+                    >
+                  </li>
+                  <li>
+                    <a href="Anatolian-rover-challenge-2023.html"
+                      >Anatolian Rover Challenge(ARC) 2023</a
+                    >
+                  </li>
+                  <li>
+                    <a href="University-rover-challenge-2023.html"
+                      >University Rover Challenge(URC) 2023</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  style="
+                    text-decoration: underline;
+                    text-decoration-color: #de5617ee;
+                    text-decoration-thickness: 2px;
+                    color: white;
+                    font-weight: 700;
+                  "
+                  >Media</a
+                >
+              </li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+            <ul class="menu-small">
+              <li class="has-submenu">
+                <button
+                  onclick="showMenu()"
+                  id="show-btn"
+                  style="
+                    background-color: transparent;
+                    border: none;
+                    margin-left: 4rem;
+                  "
+                >
+                  <div class="menu-div"></div>
+                  <div class="menu-div"></div>
+                  <div class="menu-div"></div>
+                </button>
+                <button
+                  onclick="hideMenu()"
+                  id="hide-btn"
+                  style="
+                    background-color: transparent;
+                    border: none;
+                    margin-left: 4rem;
+                    z-index: 40;
+                  "
+                >
+                  <div class="menu-div" style="transform: rotate(45deg)"></div>
+                  <div class="menu-div" style="transform: rotate(-45deg)"></div>
+                </button>
+                <ul id="sub-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li>
+                    <a href="team.html">Present Team</a>
+                  </li>
+                  <li>
+                    <a href="alumni.html">Alumni</a>
+                  </li>
+                  <li><a href="rovers.html">Rovers</a></li>
+                  <li><a href="achievements.html">Achievements</a></li>
+                  <li>
+                    <a onclick="showDropMenu()"> Competitions </a>
+                  </li>
+                  <li id="dropMenu" class="drop-hide">
+                    <a href="International-rover-challenge-2024.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" />
+                      International Rover Challenge(IRC) 2024</a
+                    >
+
+                    <a href="Anatolian-rover-challenge-2023.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" /> Anatolian
+                      Rover Challenge(ARC) 2023</a
+                    >
+
+                    <a href="University-rover-challenge-2023.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" />
+                      University Rover Challenge(URC) 2023</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      style="
+                        text-decoration: underline;
+                        text-decoration-color: #de5617ee;
+                        text-decoration-thickness: 2px;
+                        color: white;
+                        font-weight: 700;
+                      "
+                      >Media</a
+                    >
+                  </li>
+                  <li><a href="sponsors.html">Sponsors</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <a class="btn" href="supportus.html">Support Us</a>
+        </header>
+
+        <!-- <h1><span>Anveshak</span> iitm</h1> -->
+        <svg viewBox="0 0 400 160">
+          <text
+            x="50%"
+            y="50%"
+            dy="0.32em"
+            text-anchor="middle"
+            class="text-svg-2"
+          >
+            media
+          </text>
+        </svg>
+      </div>
+    </section>
+    <section id="content">
+      <div class="row">
+        <img src="https://w3schools.com/w3images/wedding.jpg" />
+        <img src="https://w3schools.com/w3images/rocks.jpg" />
+        <img src="https://w3schools.com/w3images/falls2.jpg" />
+        <img src="https://w3schools.com/w3images/paris.jpg" />
+        <img src="https://w3schools.com/w3images/nature.jpg" />
+        <img src="https://w3schools.com/w3images/mist.jpg" />
+        <img src="https://w3schools.com/w3images/paris.jpg" />
+
+        <img src="https://w3schools.com/w3images/underwater.jpg" />
+        <img src="https://w3schools.com/w3images/ocean.jpg" />
+        <img src="https://w3schools.com/w3images/wedding.jpg" />
+        <img src="https://w3schools.com/w3images/mountainskies.jpg" />
+        <img src="https://w3schools.com/w3images/rocks.jpg" />
+        <img src="https://w3schools.com/w3images/underwater.jpg" />
+
+        <img src="https://w3schools.com/w3images/wedding.jpg" />
+        <img src="https://w3schools.com/w3images/rocks.jpg" />
+        <img src="https://w3schools.com/w3images/falls2.jpg" />
+        <img src="https://w3schools.com/w3images/paris.jpg" />
+        <img src="https://w3schools.com/w3images/nature.jpg" />
+        <img src="https://w3schools.com/w3images/mist.jpg" />
+        <img src="https://w3schools.com/w3images/paris.jpg" />
+
+        <img src="https://w3schools.com/w3images/underwater.jpg" />
+        <img src="https://w3schools.com/w3images/ocean.jpg" />
+        <img src="https://w3schools.com/w3images/wedding.jpg" />
+        <img src="https://w3schools.com/w3images/mountainskies.jpg" />
+        <img src="https://w3schools.com/w3images/rocks.jpg" />
+        <img src="https://w3schools.com/w3images/underwater.jpg" />
+      </div>
+    </section>
+
+    <script src="js/menu-script.js"></script>
+  </body>
+</html>

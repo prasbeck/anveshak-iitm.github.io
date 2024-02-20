@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <title>Anveshak | Competitions | Anatolian-rover-challenge</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;700&family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --white: #fff;
+        --white-50: rgba(255, 255, 255, 0.5);
+        --white-20: rgba(255, 255, 255, 0.2);
+        --white-5: rgba(255, 255, 255, 0.05);
+        --accent: #bf4700;
+        --gray: #0e0e0e;
+      }
+
+      html {
+        font-size: 16px;
+        font-family: "Manrope", sans-serif;
+        line-height: 1.5;
+      }
+
+      body {
+        background-color: var(--gray);
+      }
+
+      p {
+        color: var(--white);
+      }
+
+      h1,
+      h2,
+      h4 {
+        font-family: "Poppins", sans-serif;
+        color: var(--white);
+        font-weight: 700;
+      }
+
+      h1 {
+        font-size: 5.6875rem;
+        line-height: 1.2;
+        letter-spacing: -0.39813rem;
+        margin: 0 0 4rem;
+      }
+
+      h2 {
+        font-size: 3.75rem;
+        line-height: 1.4;
+        letter-spacing: -0.1875rem;
+        margin: 0 0 4rem;
+      }
+
+      h3 {
+        color: var(--white-50);
+        font-size: 1.6875rem;
+        font-weight: 300;
+        margin: 0 0 4rem;
+      }
+
+      h4 {
+        font-size: 1.6875rem;
+        letter-spacing: -0.08438rem;
+        margin: 0;
+      }
+
+      h6 {
+        color: var(--white-50);
+        font-size: 1.125rem;
+        font-weight: 300;
+        margin: 0 0 1rem;
+      }
+      #hero,
+      footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+      }
+
+      .social-links {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+      */ .social-links a {
+        color: var(--white);
+        font-weight: 700;
+        transition: 0.2s ease-in-out;
+        display: inline-block;
+        padding: 0 1rem;
+      }
+
+      .social-links a:hover {
+        color: var(--accent);
+      }
+
+      .social-links li {
+        display: flex;
+        align-items: center;
+      }
+
+      .social-links li:not(:last-child)::after {
+        content: "";
+        height: 1px;
+        width: 1.5rem;
+        display: inline-block;
+        background-color: var(--white-20);
+      }
+
+      #scroll-icon rect,
+      #scroll-icon path {
+        stroke: var(--accent);
+      }
+
+      /* .btn {
+        appearance: none;
+        border: none;
+        background: transparent;
+        color: var(--accent);
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        transition: gap 0.2s ease-in-out;
+        cursor: pointer;
+        padding: 1rem 2rem;
+      } */
+
+      .btn svg path {
+        stroke: var(--accent);
+      }
+
+      /* .btn:hover {
+        gap: 2rem;
+      } */
+
+      /* .btn + .social-links {
+        margin-top: 8rem;
+      } */
+
+      h6 span {
+        display: inline-block;
+        width: 1.5rem;
+        height: 1px;
+        vertical-align: middle;
+        background-color: var(--white-20);
+        margin-inline: 0.5rem;
+      }
+
+      #portfolio {
+        padding: 4rem;
+      }
+
+      .entry {
+        display: grid;
+        grid-template-columns: 0.6fr 1.4fr;
+        align-items: center;
+        gap: 4rem;
+        margin-inline: 4rem;
+        margin-bottom: 6rem;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .entry figure {
+        margin: 0;
+        padding: 6rem;
+        background-color: var(--white-5);
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        height: auto;
+        padding-bottom: 1rem;
+      }
+      .img-1 {
+        background-image: url("images/competitions/arc23.jpg");
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media screen and (max-width: 1100px) {
+        .entry {
+          display: block;
+          margin: 3rem 0;
+        }
+        h4 {
+          font-size: 1.2rem;
+          letter-spacing: normal;
+        }
+      }
+      @media screen and (max-width: 640px) {
+        #portfolio {
+          padding: 16px 24px;
+        }
+        .entry figure {
+          padding: 3rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="hero">
+      <div class="container">
+        <header id="main-header">
+          <a href="index.html"
+            ><img src="images/logo.png" id="logo" alt="Logo"
+          /></a>
+          <nav>
+            <ul class="menu-large">
+              <li><a href="index.html">Home</a></li>
+              <li class="has-submenu drop-down">
+                <a href="#">The Team</a>
+                <ul>
+                  <li><a href="team.html">Present Team</a></li>
+                  <li><a href="alumni.html">Alumni</a></li>
+                </ul>
+              </li>
+              <li><a href="rovers.html">Rovers</a></li>
+              <li><a href="achievements.html">Achievements</a></li>
+              <li class="has-submenu drop-down">
+                <a
+                  href="#"
+                  style="
+                    pointer-events: none;
+                    text-decoration: underline;
+                    text-decoration-color: #de5617ee;
+                    text-decoration-thickness: 2px;
+                    color: white;
+                    font-weight: 700;
+                  "
+                  >Competitions</a
+                >
+                <ul>
+                  <li>
+                    <a href="International-rover-challenge-2024.html"
+                      >International Rover Challenge(IRC) 2024</a
+                    >
+                  </li>
+                  <li>
+                    <a href="Anatolian-rover-challenge-2023.html"
+                      >Anatolian Rover Challenge(ARC) 2023</a
+                    >
+                  </li>
+                  <li>
+                    <a href="University-rover-challenge-2023.html"
+                      >University Rover Challenge(URC) 2023</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="media.html">Media</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+            <ul class="menu-small">
+              <li class="has-submenu">
+                <button
+                  onclick="showMenu()"
+                  id="show-btn"
+                  style="
+                    background-color: transparent;
+                    border: none;
+                    margin-left: 4rem;
+                  "
+                >
+                  <div class="menu-div"></div>
+                  <div class="menu-div"></div>
+                  <div class="menu-div"></div>
+                </button>
+                <button
+                  onclick="hideMenu()"
+                  id="hide-btn"
+                  style="
+                    background-color: transparent;
+                    border: none;
+                    margin-left: 4rem;
+                    z-index: 40;
+                  "
+                >
+                  <div class="menu-div" style="transform: rotate(45deg)"></div>
+                  <div class="menu-div" style="transform: rotate(-45deg)"></div>
+                </button>
+                <ul id="sub-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li>
+                    <a href="team.html">Present Team</a>
+                  </li>
+                  <li>
+                    <a href="alumni.html">Alumni</a>
+                  </li>
+                  <li><a href="rovers.html">Rovers</a></li>
+                  <li><a href="achievements.html">Achievements</a></li>
+                  <li>
+                    <a
+                      onclick="showDropMenu()"
+                      style="
+                        text-decoration: underline;
+                        text-decoration-color: #de5617ee;
+                        text-decoration-thickness: 2px;
+                        color: white;
+                        font-weight: 700;
+                      "
+                    >
+                      Competitions
+                    </a>
+                  </li>
+
+                  <li id="dropMenu" class="drop-hide">
+                    <a href="International-rover-challenge-2024.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" />
+                      International Rover Challenge(IRC) 2024</a
+                    >
+
+                    <a href="Anatolian-rover-challenge-2023.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" /> Anatolian
+                      Rover Challenge(ARC) 2023</a
+                    >
+
+                    <a href="University-rover-challenge-2023.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" />
+                      University Rover Challenge(URC) 2023</a
+                    >
+                  </li>
+                  <li><a href="media.html">Media</a></li>
+                  <li><a href="sponsors.html">Sponsors</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+          <a class="btn" href="supportus.html">Support Us</a>
+        </header>
+      </div>
+    </section>
+    <section>
+      <div class="img-1">
+        <svg
+          viewBox="0 0 400 80"
+          style="background-color: #0e0e0e8f; min-height: 500px"
+        >
+          <text
+            x="50%"
+            y="50%"
+            dy="0.32em"
+            text-anchor="middle"
+            class="text-svg-1"
+            style="font-size: 32px"
+          >
+            Anatolian Rover Challenge
+          </text>
+          <text
+            x="50%"
+            y="80%"
+            dy="0.32em"
+            text-anchor="middle"
+            class="text-svg-2"
+            style="font-size: 32px"
+          >
+            (ARC) 2023
+          </text>
+        </svg>
+      </div>
+    </section>
+    <section id="portfolio">
+      <div class="entry">
+        <div class="entry__meta">
+          <h6>Anatolian Rover Challenge(ARC) <span></span>2023</h6>
+          <h4>6th position</h4>
+        </div>
+        <p>
+          We enthusiastically participated in the
+          <span
+            ><a
+              href="https://www.anatolianrover.space/"
+              style="color: #de5617ee; cursor: pointer"
+              >Anatolian Rover Challenge</a
+            ></span
+          >
+          2023 held in Ankara, Turkiye, where we achieved a commendable 6th
+          position among the competing teams. The competition comprised four
+          challenging missions, each testing our rover's versatility and
+          capabilities. The Night Mission pushed our engineering prowess by
+          navigating through low-light conditions, emphasizing the importance of
+          robust vision systems. The Maintenance mission showcased our team's
+          agility in addressing unexpected challenges and ensuring the rover's
+          operational efficiency. Astrobiology required meticulous sample
+          collection and analysis, simulating extraterrestrial exploration
+          scenarios. Autonomous Navigation tested our rover's ability to
+          navigate unfamiliar terrains independently. The experience was
+          invaluable, providing us with insights into real-world problem-solving
+          and enhancing our skills in robotics and space exploration.
+        </p>
+      </div>
+      <div class="entry">
+        <div class="entry__meta">
+          <h6>ARC<span></span>2023</h6>
+        </div>
+        <figure class="entry__media">
+          <video
+            src="videos/arc1.webm"
+            autoplay
+            muted
+            loop
+            style="max-width: 100%"
+          ></video>
+        </figure>
+      </div>
+
+      <div class="entry">
+        <div class="entry__meta">
+          <h6>ARC<span></span>2023</h6>
+        </div>
+        <figure class="entry__media">
+          <video
+            src="videos/arc2.webm"
+            autoplay
+            muted
+            loop
+            width="100%"
+          ></video>
+        </figure>
+      </div>
+    </section>
+    <footer>
+      <!-- <h6>Illustration is my passion</h6> -->
+
+      <div class="footer__content">
+        <!-- <h2>Let's create something amazing together</h2> -->
+        <!-- <button class="btn">
+          Tell me about your project
+          <svg width="25" height="24" viewBox="0 0 25 24" fill="none">
+            <path
+              d="M21.5 12H3.5M17.5 8L21.5 12L17.5 8ZM21.5 12L17.5 16L21.5 12Z"
+              stroke="white"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button> -->
+        <ul class="social-links">
+          <li>
+            <a href="https://facebook.com/anveshak.iitm" target="_blank">
+              <img src="icons/icons8-facebook.svg" alt="FB" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/anveshak_iitm/" target="_blank">
+              <img src="icons/icons8-instagram.svg" alt="Instagram" />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/channel/UCiYcMDTMdyaxfUrP-6C2HAQ"
+              target="_blank"
+            >
+              <img src="icons/icons8-youtube.svg" alt="YouTube" />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:teamanveshak@smail.iitm.ac.in">
+              <img src="icons/icons8-gmail.svg" alt="Email" />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <p style="color: #de5617ee">
+        &copy; 2024 Team Anveshak. All rights reserved.
+      </p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="js/menu-script.js"></script>
+  </body>
+</html>

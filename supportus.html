@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/logo.png" />
+    <title>Anveshak | Support us</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      color: #444;
+    }
+    p {
+      padding: 12px;
+      background-color: rgba(0, 0, 0, 0.025);
+    }
+    a {
+      color: #ee682a;
+      border-bottom: 1px solid rgba(238, 104, 42, 0.2);
+    }
+    @keyframes breathe {
+      from {
+        transform: scale(0.9);
+      }
+      to {
+        transform: scale(1);
+      }
+    }
+  </style>
+  <body>
+    <section id="hero">
+      <div class="container" style="height: auto">
+        <!-- <video autoplay muted loop class="bg-video">
+          <source src="videos/background-1.mp4" />
+        </video> -->
+
+        <header id="main-header">
+          <a href="index.html"
+            ><img src="images/logo.png" id="logo" alt="Logo"
+          /></a>
+          <nav>
+            <ul class="menu-large">
+              <li><a href="index.html">Home</a></li>
+              <li class="has-submenu drop-down">
+                <a href="#">The Team</a>
+                <ul>
+                  <li><a href="team.html">Present Team</a></li>
+                  <li><a href="alumni.html">Alumni</a></li>
+                </ul>
+              </li>
+              <li><a href="rovers.html">Rovers</a></li>
+              <li><a href="achievements.html">Achievements</a></li>
+              <li class="has-submenu drop-down">
+                <a href="#" style="pointer-events: none">Competitions</a>
+                <ul>
+                  <li>
+                    <a href="International-rover-challenge-2024.html"
+                      >International Rover Challenge(IRC) 2024</a
+                    >
+                  </li>
+                  <li>
+                    <a href="Anatolian-rover-challenge-2023.html"
+                      >Anatolian Rover Challenge(ARC) 2023</a
+                    >
+                  </li>
+                  <li>
+                    <a href="University-rover-challenge-2023.html"
+                      >University Rover Challenge(URC) 2023</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="media.html">Media</a></li>
+              <li><a href="sponsors.html">Sponsors</a></li>
+            </ul>
+            <ul class="menu-small">
+              <li class="has-submenu">
+                <button
+                  onclick="showMenu()"
+                  id="show-btn"
+                  style="
+                    background-color: transparent;
+                    border: none;
+                    margin-left: 4rem;
+                  "
+                >
+                  <div class="menu-div"></div>
+                  <div class="menu-div"></div>
+                  <div class="menu-div"></div>
+                </button>
+                <button
+                  onclick="hideMenu()"
+                  id="hide-btn"
+                  style="
+                    background-color: transparent;
+                    border: none;
+                    margin-left: 4rem;
+                    z-index: 40;
+                  "
+                >
+                  <div class="menu-div" style="transform: rotate(45deg)"></div>
+                  <div class="menu-div" style="transform: rotate(-45deg)"></div>
+                </button>
+                <ul id="sub-menu">
+                  <li><a href="index.html">Home</a></li>
+                  <li>
+                    <a href="team.html">Present Team</a>
+                  </li>
+                  <li>
+                    <a href="alumni.html">Alumni</a>
+                  </li>
+                  <li><a href="rovers.html">Rovers</a></li>
+                  <li><a href="achievements.html">Achievements</a></li>
+                  <li>
+                    <a onclick="showDropMenu()"> Competitions </a>
+                  </li>
+                  <li id="dropMenu" class="drop-hide">
+                    <a href="International-rover-challenge-2024.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" />
+                      International Rover Challenge(IRC) 2024</a
+                    >
+
+                    <a href="Anatolian-rover-challenge-2023.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" /> Anatolian
+                      Rover Challenge(ARC) 2023</a
+                    >
+
+                    <a href="University-rover-challenge-2023.html"
+                      ><img src="icons/icon-arrow-right.svg" alt="" />
+                      University Rover Challenge(URC) 2023</a
+                    >
+                  </li>
+                  <li><a href="media.html">Media</a></li>
+                  <li><a href="sponsors.html">Sponsors</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <a class="btn" href="#">Support Us</a>
+        </header>
+      </div>
+    </section>
+    <section style="padding: 2rem">
+      <div style="padding: 16px">
+        <h2>Support Us</h2>
+        <p>
+          On our journey to excellence, we are determined to climb to a position
+          amongst the top 10 in URC 2019. The team is working on research and
+          development for exciting innovations in the field of robotics, the
+          requirement for which is having cutting edge technology at our
+          disposal.
+        </p>
+        <p>
+          While the team receives financial aid from the institute, Team
+          Anveshak is seeking both financial and in-kind sponsorships to enable
+          us to reach our goals that much more quicker. We value partnership
+          with our sponsors. We would also be interested to work together with
+          collaborative sponsors on research and development that would be
+          mutually beneficial to our organizations. Team Anveshak requires
+          assistance from sponsors for: Financial assistance for travel and
+          logistics Electronic components like microprocessors, sensors and
+          industrial grade connectors Raw material, fabrication and mechanical
+          components such as bearings and conveyor belts Sophisticated equipment
+          such as a workstation, cameras and sensors
+        </p>
+      </div>
+      <div>
+        <h2>Donate to Team Anveshak</h2>
+        <p>
+          Team Anveshak accepts online donation through our
+          <span
+            ><a
+              href="https://joyofgiving.alumni.iitm.ac.in/projects/cfi-student-projects/university-rover-challenge-team-anveshak-cfi"
+            >
+              Crowd-Funding portal</a
+            ></span
+          >
+        </p>
+        <p>
+          For corporate sponsorships, please contact us at
+          <span><a>teamanveshak@smail.iitm.ac.in</a></span>
+        </p>
+        <p>
+          You can find our brochure <span><a></a></span>
+        </p>
+      </div>
+    </section>
+
+    <script src="js/menu-script.js"></script>
+  </body>
+</html>
